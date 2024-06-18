@@ -1,3 +1,12 @@
+mod arena;
+mod player;
+mod senzubean;
+use bevy::prelude::*;
+use player::PlayerPlugin;
+
 fn main() {
-    println!("Hello, new LLD!");
+    App::new()
+        .add_plugins(DefaultPlugins)
+        .add_plugins(PlayerPlugin)
+        .run();
 }
