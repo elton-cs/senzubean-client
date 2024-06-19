@@ -78,6 +78,6 @@ fn spawn_players(mut commands: Commands) {
 
 fn display_players(query: Query<(Entity, &Player)>) {
     for (entity, player) in query.iter() {
-        info!("Entity {:?}: {:?}", entity, player);
+        info!("Entity {:?}: {:?}", entity, player.0);
     }
 }
