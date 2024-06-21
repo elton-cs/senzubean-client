@@ -9,7 +9,7 @@ impl Plugin for PlayerPlugin {
 }
 
 #[derive(Component, Debug, Copy, Clone)]
-struct Player(Character);
+pub struct Player(Character);
 
 #[derive(Component, Debug, Copy, Clone)]
 enum Character {

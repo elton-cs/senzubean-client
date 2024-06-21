@@ -2,8 +2,8 @@ use bevy::prelude::*;
 
 #[derive(Component, Debug, Copy, Clone)]
 pub struct Point2D {
-    x: u32,
-    y: u32,
+    pub x: u32,
+    pub y: u32,
 }
 
 impl Point2D {
